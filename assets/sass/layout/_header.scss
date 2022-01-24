@@ -1,0 +1,30 @@
+@use "../abstract/variable" as var;
+@use "../abstract/funciton.scss" as func;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem;
+  border-bottom: 1px solid #eee;
+  &--Menu {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    align-items: center ;
+    &__item > a {
+      margin-right: 1.5rem;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 200ms;
+      color: #242424;
+
+      &:hover {
+        color: func.theme-color("primary");
+      }
+      &.active {
+        color: func.theme-color("primary");
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "../abstract/variable" as var;
+
+@function theme-color($color:"primary"){
+    @return  map-get(var.$theme-color, "primary");
+}
+@function theme-colors($color:"primary-hover"){
+    @return  map-get(var.$theme-color, "primary-hover");
+}
