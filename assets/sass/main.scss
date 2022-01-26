@@ -2,11 +2,16 @@
 @import "base/global";
 @import "base/reset";
 
-//utilities
-@import "utitiles/utitiles";
-
 //components
-@import "components/button" ;
+@import "components/button";
+@import "components/badges";
 
 //layout
 @import "layout/header";
+
+//utilities
+@import "utitiles/utitiles";
+@import "utitiles/spaceing";
+
+//pages
+@import "page/home";

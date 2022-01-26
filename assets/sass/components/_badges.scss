@@ -1,0 +1,11 @@
+@use "../abstract/funciton.scss" as func;
+
+.badge {
+  padding: 0px 14px;
+  border-radius: 10px;
+  &-primary {
+    @extend .badge;
+    background-color: func.theme-color();
+    color: #fff;
+  }
+}
