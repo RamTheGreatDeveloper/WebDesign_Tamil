@@ -1,0 +1,107 @@
+.background-shapes {
+  .box1 {
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #3b1fb6;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .box2 {
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #25a86b;
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .box3 {
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #b11947;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .dot1 {
+    background: #b11947;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .dot2 {
+    background: #d114c8;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .dot3 {
+    background: #1979b1;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .dot4 {
+    background: #acd615;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 76%;
+    left: 42%;
+    z-index: -1;
+    border-radius: 0.36rem;
+    transform: rotate(360deg);
+    animation: boxshape 5s linear infinite;
+  }
+  .heart1 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 86%;
+    left: 32%;
+    z-index: -1;
+    color: #f4284a;
+    animation: boxshape 5s linear infinite;
+  }
+  .heart2 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 36%;
+    left: 92%;
+    z-index: -1;
+    color: #f45128;
+    animation: boxshape 5s linear infinite;
+  }
+}

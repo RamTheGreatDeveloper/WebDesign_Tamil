@@ -1,0 +1,82 @@
+@use "../abstract/funciton.scss" as func;
+@use "../abstract/variable" as var;
+
+.roadmap {
+  padding: 8rem 20rem;
+  &--heading {
+    text-align: center;
+  }
+  &--items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  &--item {
+    transition: 500ms;
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 350px;
+    position: relative;
+    cursor: pointer;
+    filter: grayscale(100);
+
+    &:hover {
+      filter: grayscale(0);
+    }
+    &:hover &__img::after {
+      animation: rotate-shape 4000ms linear infinite;
+    }
+    &__img {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 30px;
+      img {
+        width: 60px;
+        margin-top: 25px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        outline: 5px dotted #3f43fd;
+        border-radius: 50%;
+      }
+    }
+
+    &__contents {
+      margin-top: 2rem;
+    }
+    &:not(:last-child):before {
+        transition: 500ms;
+      position: absolute;
+      content: "\f054";
+      font-weight: 600;
+      top: 35%;
+      right: -15%;
+      font-family: "Font Awesome 5 Free";
+      font-size: 3rem;
+      width: 70px;
+      height: 70px;
+      z-index: 1;
+      line-height: 1;
+      color: #020710;
+    }
+    &:hover:not(:last-child):before{
+right: -22%;
+color: #3f43fd ;
+    }
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    p {
+      color: gray;
+      line-height: 1.5;
+    }
+  }
+}

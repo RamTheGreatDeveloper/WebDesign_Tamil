@@ -1,0 +1,57 @@
+@use "../abstract/funciton" as func;
+
+.courses {
+  padding: 8rem 20rem;
+  background-color: func.theme-colors();
+
+  &--heading {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+    p {
+      color: rgb(223, 223, 223);
+    }
+  }
+  &--cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--card {
+    background-color: #fff;
+    max-width: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+    &--img {
+      width: 360px;
+    }
+    &--body {
+      padding: 2rem;
+      h4 {
+        font-size: 1.4rem;
+      }
+      p {
+        color: gray;
+        line-height: 1.5rem;
+      }
+    }
+    a {
+      color: rgba(0, 0, 0, 0.856);
+    }
+    &:hover {
+      box-shadow: 2px 2px 20px 5px rgba(54, 54, 54, 0.5);
+    }
+  }
+  &--info {
+    text-align: center;
+    color: #fff;
+    a {
+      color: #fff;
+      &:hover {
+        text-shadow: 2px 2px 20px  rgba(54, 54, 54);
+      }
+    }
+  }
+}

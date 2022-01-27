@@ -8,3 +8,16 @@
   transition: 300ms;
   animation: color-change 10s infinite;
 }
+
+.line {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  width: 5rem;
+  height: 0.6rem;
+  border-radius: 6px;
+  margin: 30px auto;
+}

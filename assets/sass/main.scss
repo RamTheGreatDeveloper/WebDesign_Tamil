@@ -5,6 +5,7 @@
 //components
 @import "components/button";
 @import "components/badges";
+@import "components/form";
 
 //layout
 @import "layout/header";
@@ -12,6 +13,12 @@
 //utilities
 @import "utitiles/utitiles";
 @import "utitiles/spaceing";
+@import "utitiles/backgroundshapes";
 
 //pages
 @import "page/home";
+@import "page/about";
+@import "page/roadmap";
+@import "page/courses";
+@import "page/contact";
+@import "page/footer";

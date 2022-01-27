@@ -9,13 +9,23 @@
   line-height: 1;
   font-size: 0.9rem;
   font-weight: 600;
-
+  cursor: pointer;
   &-primary {
     @extend .btn;
     background-color: func.theme-color();
     color: #fff;
     &:hover {
       background-color: func.theme-colors("primary-hover");
+    }
+  }
+  &-primary-outlined {
+    @extend .btn;
+    border: 2px solid func.theme-color();
+    background: #fff;
+    color: func.theme-color();
+    &:hover {
+      background-color: func.theme-colors("primary-hover");
+      color: #fff;
     }
   }
 }
