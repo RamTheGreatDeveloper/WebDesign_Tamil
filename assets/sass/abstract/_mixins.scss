@@ -1,0 +1,44 @@
+
+
+@mixin responsive($breakpoint) {
+
+        //x-small devices{portrait phones,less than 576px}
+    @if $breakpoint == xs{
+        @media only screen and (max-width:576px){
+            @content;
+        }
+    }
+
+ //x-small devices{landscape phones,less than 576px}
+ @else if $breakpoint == sm{
+    @media only screen and (min-width:576px){
+        @content;
+    }
+}
+//medium devices{tablet 768px}
+@else if $breakpoint == md{
+    @media only screen and (min-width:768px){
+        @content;
+    }
+}
+ //large device {Desktop,992px}
+ @else if $breakpoint == lg{
+    @media only screen and (min-width:992px){
+        @content;
+    }
+}
+ //x-large devices{large desktop ,1200px}
+ @else if $breakpoint == xlg{
+    @media only screen and (min-width:1200px){
+        @content;
+    }
+}
+ //xx-large devices{larger desktop ,1400px}
+ @else if $breakpoint == xxlg{
+    @media only screen and (max-width:1400px){
+        @content;
+    }
+}
+
+
+}

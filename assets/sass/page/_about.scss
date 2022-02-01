@@ -1,30 +1,41 @@
 @use "../abstract/variable" as var;
 @use "../abstract/funciton.scss" as func;
-
-.about-area{
-    padding: 8rem 20rem;
-    background-color: func.theme-color();
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 11rem;
-    &--img{
-width: 32rem;
+@use "../abstract/mixins" as mixins;
+.about-area {
+  padding: 8rem 20rem;
+  background-color: func.theme-color();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11rem;
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  &--img {
+    width: 32rem;
+  }
+  &--contents {
+    color: #fff;
+    h2 {
+      font-size: 3rem;
+      @include mixins.responsive(xs) {
+        font-size: 2rem;
+      }
     }
-    &--contents{
-        
-            color: #fff;
-       h2{
-           font-size: 3rem;
-       }
-       p{
-           color: #cfcfcf;
-       }
-       a{
-           color: #fff;
-           &:hover{
-               text-shadow: 10px 20px 30px black;
-           }
-       }
+    p {
+      line-height: 2;
+      color: #cfcfcf;
+      @include mixins.responsive(xs) {
+        font-size: 0.9rem;
+      }
     }
+    a {
+      color: #fff;
+      &:hover {
+        text-shadow: 10px 20px 30px black;
+      }
+    }
+  }
 }

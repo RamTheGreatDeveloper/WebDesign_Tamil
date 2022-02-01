@@ -1,5 +1,6 @@
 @use "../abstract/variable" as var;
 @use "../abstract/funciton.scss" as func;
+@use "../abstract/mixins" as mixins;
 
 .header {
   display: flex;
@@ -7,11 +8,19 @@
   align-items: center;
   padding: 1rem 20rem;
   border-bottom: 1px solid #eee;
+
+  @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+  }
+
   &--Menu {
     display: flex;
     list-style: none;
     text-transform: uppercase;
-    align-items: center ;
+    align-items: center;
+    @include mixins.responsive(xs) {
+      display: none;
+    }
     &__item > a {
       margin-right: 1.5rem;
       font-size: 14px;

@@ -17,6 +17,11 @@
   margin: 30px auto;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -84,11 +89,21 @@
   padding: 1rem 20rem;
   border-bottom: 1px solid #eee;
 }
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
 .header--Menu {
   display: flex;
   list-style: none;
   text-transform: uppercase;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .header--Menu {
+    display: none;
+  }
 }
 .header--Menu__item > a {
   margin-right: 1.5rem;
@@ -811,6 +826,11 @@
   margin-bottom: 5rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box1 {
   background: transparent;
   width: 15px;
@@ -923,6 +943,12 @@
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+}
 .hero-area--text {
   max-width: 34rem;
 }
@@ -930,11 +956,21 @@
   font-size: 3rem;
   font-weight: 600;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area--titile {
+    font-size: 2rem;
+  }
+}
 .hero-area--desc {
   line-height: 1.8;
   font-size: 1.2rem;
   margin-top: 2rem;
   color: gray;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 1rem;
+  }
 }
 
 .about-area {
@@ -945,6 +981,13 @@
   align-items: center;
   margin-top: 11rem;
 }
+@media only screen and (max-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 32rem;
 }
@@ -954,8 +997,19 @@
 .about-area--contents h2 {
   font-size: 3rem;
 }
+@media only screen and (max-width: 576px) {
+  .about-area--contents h2 {
+    font-size: 2rem;
+  }
+}
 .about-area--contents p {
+  line-height: 2;
   color: #cfcfcf;
+}
+@media only screen and (max-width: 576px) {
+  .about-area--contents p {
+    font-size: 0.9rem;
+  }
 }
 .about-area--contents a {
   color: #fff;
@@ -967,6 +1021,11 @@
 .roadmap {
   padding: 8rem 20rem;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
+}
 .roadmap--heading {
   text-align: center;
 }
@@ -975,6 +1034,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
 }
 .roadmap--item {
   transition: 500ms;
@@ -1029,6 +1093,13 @@
   line-height: 1;
   color: #020710;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap--item:not(:last-child):before {
+    content: "\f107";
+    top: 90%;
+    left: 35%;
+  }
+}
 .roadmap--item:hover:not(:last-child):before {
   right: -22%;
   color: #3f43fd;
@@ -1046,6 +1117,11 @@
   padding: 8rem 20rem;
   background-color: #3135e8;
 }
+@media only screen and (max-width: 576px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1059,6 +1135,11 @@
 .courses--cards {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 576px) {
+  .courses--cards {
+    flex-direction: column;
+  }
 }
 .courses--card {
   background-color: #fff;
@@ -1100,6 +1181,11 @@
   padding: 8rem 20rem;
   background-color: #e0e0e0;
 }
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
 .contact-card {
   display: flex;
   justify-content: center;
@@ -1107,6 +1193,11 @@
   background-color: #fff;
   padding: 2rem 3rem;
   border-radius: 0.5rem;
+}
+@media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+  }
 }
 .contact-card--contents {
   flex-grow: 1;
