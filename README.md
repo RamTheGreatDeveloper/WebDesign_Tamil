@@ -8,8 +8,8 @@ Learn to build Modern landing page built on HTML, CSS, SASS &amp; Javascript in 
 
 #### Download Resources:
 
-1. [Presentation PPT](https://raw.githubusercontent.com/anburocky3/webdesign-tamil/master/supporting-files/building-landing-page-using-sass.pptx)
-2. [Download images](https://raw.githubusercontent.com/anburocky3/webdesign-tamil/master/supporting-files/images.zip)
+1. [Presentation PPT](https://raw.githubusercontent.com/RamTheGreatDeveloper/WebDesign_Tamil/master/supporting-files/building-landing-page-using-sass.pptx)
+2. [Download images](https://raw.githubusercontent.com/RamTheGreatDeveloper/WebDesign_Tamil/master/supporting-files/images.zip)
 
 
 
