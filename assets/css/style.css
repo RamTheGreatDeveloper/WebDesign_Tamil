@@ -112,6 +112,11 @@
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 1rem 6rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -131,6 +136,11 @@
     font-size: 1.3rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .header .nav-toggler {
+    display: none;
+  }
+}
 .header--Menu {
   display: flex;
   list-style: none;
@@ -140,6 +150,11 @@
 @media only screen and (max-width: 576px) {
   .header--Menu {
     display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header--Menu {
+    display: flex;
   }
 }
 .header--Menu__item > a {
@@ -992,11 +1007,22 @@
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hero-area {
+    padding: 8rem 6rem;
+    flex-direction: row;
+  }
+}
 .hero-area img {
   width: 25rem;
 }
 .hero-area--text {
   max-width: 34rem;
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--text {
+    max-width: 25rem;
+  }
 }
 .hero-area--titile {
   font-size: 3rem;
@@ -1010,6 +1036,11 @@
 @media only screen and (min-width: 576px) {
   .hero-area--titile {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--titile {
+    font-size: 2rem;
   }
 }
 .hero-area--titile > span {
@@ -1029,6 +1060,11 @@
 @media only screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 1rem;
   }
 }
 
@@ -1054,12 +1090,25 @@
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-area {
+    padding: 8rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+}
 .about-area--img {
   width: 32rem;
 }
 @media only screen and (min-width: 576px) {
   .about-area--img {
     width: 20rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area--img {
+    width: 64rem;
   }
 }
 .about-area--contents {
@@ -1121,6 +1170,11 @@
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap {
+    padding: 8rem 4rem;
+  }
+}
 .roadmap--heading {
   text-align: center;
 }
@@ -1146,6 +1200,11 @@
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--items {
+    flex-direction: row;
+  }
+}
 .roadmap--item {
   transition: 500ms;
   position: relative;
@@ -1155,6 +1214,12 @@
   cursor: pointer;
   filter: grayscale(100%);
   margin-left: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item {
+    max-width: 600px;
+    padding: 0;
+  }
 }
 .roadmap--item:hover {
   filter: grayscale(0);
@@ -1189,9 +1254,19 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item__contents h5 {
+    font-size: 1rem;
+  }
+}
 .roadmap--item__contents p {
   color: gray;
   line-height: 1.5;
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item__contents p {
+    font-size: 0.9rem;
+  }
 }
 .roadmap--item:not(:last-child):before {
   transition: 500ms;
@@ -1222,6 +1297,14 @@
     left: 40%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item:not(:last-child):before {
+    content: "\f054";
+    top: 35%;
+    left: auto;
+    right: -30%;
+  }
+}
 .roadmap--item:hover:not(:last-child):before {
   right: -22%;
   color: #3f43fd;
@@ -1247,6 +1330,11 @@
 @media only screen and (min-width: 576px) {
   .courses {
     padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses {
+    padding: 8rem 4rem;
   }
 }
 .courses--heading {
@@ -1294,14 +1382,30 @@
     align-items: center;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses--cards {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .courses--card {
   background-color: #fff;
   max-width: 360px;
   overflow: hidden;
   border-radius: 10px;
 }
+@media only screen and (min-width: 992px) {
+  .courses--card {
+    max-width: 280px;
+  }
+}
 .courses--card--img {
-  width: 360px;
+  width: 380px;
+}
+@media only screen and (min-width: 992px) {
+  .courses--card--img {
+    width: 280px;
+  }
 }
 .courses--card--body {
   padding: 2rem;
@@ -1319,6 +1423,11 @@
     font-size: 1.3rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses--card--body h4 {
+    font-size: 1rem;
+  }
+}
 .courses--card--body p {
   color: gray;
   line-height: 1.5rem;
@@ -1331,6 +1440,11 @@
 @media only screen and (min-width: 576px) {
   .courses--card--body p {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses--card--body p {
+    font-size: 0.8rem;
   }
 }
 .courses--card a {
@@ -1364,6 +1478,11 @@
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .contact {
+    padding: 8rem 6rem;
+  }
+}
 .contact-card {
   display: flex;
   justify-content: center;
@@ -1384,6 +1503,16 @@
     flex-direction: column;
     padding: 2rem;
     align-items: initial;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-card {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-card img {
+    width: 30rem;
   }
 }
 .contact-card--contents {

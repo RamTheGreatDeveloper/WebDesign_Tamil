@@ -18,10 +18,19 @@
     flex-direction: column;
     margin-top: 0;
   }
+  @include mixins.responsive(lg) {
+    padding: 8rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
   &--img {
     width: 32rem;
     @include mixins.responsive(sm) {
       width: 20rem;
+    }
+    @include mixins.responsive(lg) {
+      width: 64rem;
     }
   }
   &--contents {
