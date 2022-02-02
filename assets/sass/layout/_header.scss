@@ -15,6 +15,9 @@
   @include mixins.responsive(sm) {
     padding: 1rem 2rem;
   }
+  @include mixins.responsive(md) {
+    padding: 1rem 2rem;
+  }
   h2 > span {
     @include mixins.responsive(xs) {
       // display: none;
