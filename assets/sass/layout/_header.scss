@@ -18,9 +18,6 @@
     list-style: none;
     text-transform: uppercase;
     align-items: center;
-    @include mixins.responsive(xs) {
-      display: none;
-    }
     &__item > a {
       margin-right: 1.5rem;
       font-size: 14px;

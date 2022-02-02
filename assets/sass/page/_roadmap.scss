@@ -7,8 +7,32 @@
   @include mixins.responsive(xs) {
     padding: 4rem 2rem;
   }
+
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+  }
+
+  @include mixins.responsive(lg) {
+    padding: 8rem 4rem;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 8rem 4rem;
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 8rem 10rem;
+  }
   &--heading {
     text-align: center;
+
+    h5 {
+      font-size: 2rem;
+    }
+
+    p {
+      color: gray;
+    }
   }
   &--items {
     display: flex;
@@ -18,15 +42,29 @@
     @include mixins.responsive(xs) {
       flex-direction: column;
     }
+
+    @include mixins.responsive(sm) {
+      flex-direction: column;
+    }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+    }
   }
   &--item {
     transition: 500ms;
-    text-align: center;
-    padding: 3rem 1rem;
-    max-width: 350px;
     position: relative;
+    padding: 3rem 1rem;
+    text-align: center;
+    max-width: 350px;
     cursor: pointer;
-    filter: grayscale(100);
+    filter: grayscale(100%);
+    margin-left: 3rem;
+
+    @include mixins.responsive(lg) {
+      max-width: 600px;
+      padding: 0;
+    }
 
     &:hover {
       filter: grayscale(0);
@@ -57,6 +95,32 @@
 
     &__contents {
       margin-top: 2rem;
+
+      h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        @include mixins.responsive(lg) {
+          font-size: 1rem;
+        }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        color: gray;
+        line-height: 1.5;
+
+        @include mixins.responsive(lg) {
+          font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1rem;
+        }
+      }
     }
     &:not(:last-child):before {
       transition: 500ms;
@@ -77,6 +141,19 @@
         content: "\f107";
         top: 90%;
         left: 35%;
+      }
+
+      @include mixins.responsive(sm) {
+        content: "\f107";
+        top: 90%;
+        left: 40%;
+      }
+
+      @include mixins.responsive(lg) {
+        content: "";
+        top: 35%;
+        left: auto;
+        right: -30%;
       }
     }
     &:hover:not(:last-child):before {
