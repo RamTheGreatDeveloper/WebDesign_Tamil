@@ -102,11 +102,21 @@
     padding: 1rem 2rem;
   }
 }
+@media only screen and (max-width: 576px) {
+  .header h2 > span {
+    font-size: 1rem;
+  }
+}
 .header--Menu {
   display: flex;
   list-style: none;
   text-transform: uppercase;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .header--Menu {
+    display: none;
+  }
 }
 .header--Menu__item > a {
   margin-right: 1.5rem;
@@ -952,55 +962,11 @@
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 576px) {
-  .hero-area {
-    padding: 4rem 2rem;
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero-area {
-    padding: 8rem 6rem;
-    flex-direction: row;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-area {
-    padding: 8rem 15rem;
-    justify-content: space-between;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .hero-area {
-    padding: 8rem 20rem;
-    justify-content: space-between;
-  }
-}
 .hero-area img {
   width: 25rem;
 }
-@media only screen and (min-width: 1200px) {
-  .hero-area img {
-    width: 30rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .hero-area img {
-    width: 40rem;
-  }
-}
 .hero-area--text {
   max-width: 34rem;
-}
-@media only screen and (min-width: 992px) {
-  .hero-area--text {
-    max-width: 25rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .hero-area--text {
-    max-width: 40rem;
-  }
 }
 .hero-area--titile {
   font-size: 3rem;
@@ -1011,33 +977,8 @@
     font-size: 2rem;
   }
 }
-@media only screen and (min-width: 576px) {
-  .hero-area--titile {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero-area--titile {
-    font-size: 2rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-area--titile {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .hero-area--titile {
-    font-size: 3rem;
-  }
-}
 .hero-area--titile > span {
   font-size: 1.5rem;
-}
-@media only screen and (max-width: 1400px) {
-  .hero-area--titile > span {
-    font-size: 3rem;
-  }
 }
 .hero-area--desc {
   line-height: 1.8;
@@ -1048,21 +989,6 @@
 @media only screen and (max-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .hero-area--desc {
-    font-size: 0.9rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero-area--desc {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .hero-area--desc {
-    font-size: 1.2rem;
   }
 }
 
@@ -1123,26 +1049,6 @@
     padding: 4rem 2rem;
   }
 }
-@media only screen and (min-width: 576px) {
-  .roadmap {
-    padding: 4rem 2rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .roadmap {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .roadmap {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .roadmap {
-    padding: 8rem 10rem;
-  }
-}
 .roadmap--heading {
   text-align: center;
 }
@@ -1163,16 +1069,6 @@
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 576px) {
-  .roadmap--items {
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .roadmap--items {
-    flex-direction: row;
-  }
-}
 .roadmap--item {
   transition: 500ms;
   position: relative;
@@ -1182,12 +1078,6 @@
   cursor: pointer;
   filter: grayscale(100%);
   margin-left: 3rem;
-}
-@media only screen and (min-width: 992px) {
-  .roadmap--item {
-    max-width: 600px;
-    padding: 0;
-  }
 }
 .roadmap--item:hover {
   filter: grayscale(0);
@@ -1222,29 +1112,9 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
-@media only screen and (min-width: 992px) {
-  .roadmap--item__contents h5 {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .roadmap--item__contents h5 {
-    font-size: 1.5rem;
-  }
-}
 .roadmap--item__contents p {
   color: gray;
   line-height: 1.5;
-}
-@media only screen and (min-width: 992px) {
-  .roadmap--item__contents p {
-    font-size: 0.9rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .roadmap--item__contents p {
-    font-size: 1rem;
-  }
 }
 .roadmap--item:not(:last-child):before {
   transition: 500ms;
@@ -1266,21 +1136,6 @@
     content: "\f107";
     top: 90%;
     left: 35%;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .roadmap--item:not(:last-child):before {
-    content: "\f107";
-    top: 90%;
-    left: 40%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .roadmap--item:not(:last-child):before {
-    content: "\f054";
-    top: 35%;
-    left: auto;
-    right: -30%;
   }
 }
 .roadmap--item:hover:not(:last-child):before {
@@ -1305,26 +1160,6 @@
     padding: 4rem 2rem;
   }
 }
-@media only screen and (min-width: 576px) {
-  .courses {
-    padding: 4rem 2rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .courses {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .courses {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .courses {
-    padding: 8rem 10rem;
-  }
-}
 .courses--heading {
   text-align: center;
 }
@@ -1347,7 +1182,7 @@
 }
 .courses--cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 576px) {
   .courses--cards {

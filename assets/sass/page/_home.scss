@@ -9,46 +9,11 @@
     flex-direction: column;
   }
 
-  @include mixins.responsive(sm) {
-    padding: 4rem 2rem;
-    flex-direction: column;
-  }
-
-  @include mixins.responsive(lg) {
-    padding: 8rem 6rem;
-    flex-direction: row;
-  }
-
-  @include mixins.responsive(xlg) {
-    padding: 8rem 15rem;
-    justify-content: space-between;
-  }
-
-  @include mixins.responsive(xxlg) {
-    padding: 8rem 20rem;
-    justify-content: space-between;
-    // flex-wrap: nowrap;
-  }
   img {
     width: 25rem;
-
-    @include mixins.responsive(xlg) {
-      width: 30rem;
-    }
-
-    @include mixins.responsive(xxlg) {
-      width: 40rem;
-    }
   }
   &--text {
     max-width: 34rem;
-    @include mixins.responsive(lg) {
-      max-width: 25rem;
-    }
-
-    @include mixins.responsive(xxlg) {
-      max-width: 40rem;
-    }
   }
   &--titile {
     font-size: 3rem;
@@ -58,27 +23,8 @@
       font-size: 2rem;
     }
 
-    @include mixins.responsive(sm) {
-      font-size: 1.5rem;
-    }
-
-    @include mixins.responsive(lg) {
-      font-size: 2rem;
-    }
-
-    @include mixins.responsive(xlg) {
-      font-size: 2.5rem;
-    }
-
-    @include mixins.responsive(xxlg) {
-      font-size: 3rem;
-    }
     & > span {
       font-size: 1.5rem;
-
-      @include mixins.responsive(xxlg) {
-        font-size: 3rem;
-      }
     }
   }
   &--desc {
@@ -88,18 +34,6 @@
     color: gray;
     @include mixins.responsive(xs) {
       font-size: 0.9rem;
-    }
-
-    @include mixins.responsive(sm) {
-      font-size: 0.9rem;
-    }
-
-    @include mixins.responsive(lg) {
-      font-size: 1rem;
-    }
-
-    @include mixins.responsive(xxlg) {
-      font-size: 1.2rem;
     }
   }
 }

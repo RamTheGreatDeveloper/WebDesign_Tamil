@@ -12,12 +12,20 @@
   @include mixins.responsive(xs) {
     padding: 1rem 2rem;
   }
-
+  h2 > span {
+    @include mixins.responsive(xs) {
+      // display: none;
+      font-size: 1rem;
+    }
+  }
   &--Menu {
     display: flex;
     list-style: none;
     text-transform: uppercase;
     align-items: center;
+    @include mixins.responsive(xs) {
+      display: none;
+    }
     &__item > a {
       margin-right: 1.5rem;
       font-size: 14px;
