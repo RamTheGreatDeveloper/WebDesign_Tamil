@@ -7,7 +7,9 @@
   @include mixins.responsive(xs) {
     padding: 4rem 2rem;
   }
-
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+  }
   &--heading {
     text-align: center;
 
@@ -25,6 +27,9 @@
     align-items: center;
     margin-top: 3rem;
     @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
+    @include mixins.responsive(sm) {
       flex-direction: column;
     }
   }
@@ -97,6 +102,11 @@
         content: "\f107";
         top: 90%;
         left: 35%;
+      }
+      @include mixins.responsive(sm) {
+        content: "\f107";
+        top: 90%;
+        left: 40%;
       }
     }
     &:hover:not(:last-child):before {

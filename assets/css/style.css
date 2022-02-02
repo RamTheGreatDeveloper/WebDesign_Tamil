@@ -102,9 +102,28 @@
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
+  }
+}
+.header .nav-toggler {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .header .nav-toggler {
+    display: block;
+    font-size: 1.3rem;
   }
 }
 .header--Menu {
@@ -962,6 +981,12 @@
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+}
 .hero-area img {
   width: 25rem;
 }
@@ -977,6 +1002,11 @@
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area--titile {
+    font-size: 1.5rem;
+  }
+}
 .hero-area--titile > span {
   font-size: 1.5rem;
 }
@@ -987,6 +1017,11 @@
   color: gray;
 }
 @media only screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
   }
@@ -1007,13 +1042,30 @@
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 32rem;
+}
+@media only screen and (min-width: 576px) {
+  .about-area--img {
+    width: 20rem;
+  }
 }
 .about-area--contents {
   color: #fff;
 }
 @media only screen and (max-width: 576px) {
+  .about-area--contents {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) {
   .about-area--contents {
     margin: 0;
   }
@@ -1026,10 +1078,20 @@
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area--contents h2 {
+    font-size: 1.5rem;
+  }
+}
 .about-area--contents p {
   color: #cfcfcf;
 }
 @media only screen and (max-width: 576px) {
+  .about-area--contents p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .about-area--contents p {
     font-size: 0.9rem;
   }
@@ -1045,6 +1107,11 @@
   padding: 8rem 20rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap {
     padding: 4rem 2rem;
   }
@@ -1065,6 +1132,11 @@
   margin-top: 3rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap--items {
     flex-direction: column;
   }
@@ -1138,6 +1210,13 @@
     left: 35%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .roadmap--item:not(:last-child):before {
+    content: "\f107";
+    top: 90%;
+    left: 40%;
+  }
+}
 .roadmap--item:hover:not(:last-child):before {
   right: -22%;
   color: #3f43fd;
@@ -1160,6 +1239,11 @@
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1172,10 +1256,20 @@
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--heading h2 {
+    font-size: 1.5rem;
+  }
+}
 .courses--heading p {
   color: #dfdfdf;
 }
 @media only screen and (max-width: 576px) {
+  .courses--heading p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .courses--heading p {
     font-size: 0.9rem;
   }
@@ -1187,6 +1281,12 @@
 @media only screen and (max-width: 576px) {
   .courses--cards {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .courses--cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .courses--card {
@@ -1209,11 +1309,21 @@
     font-size: 1.3rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--card--body h4 {
+    font-size: 1.3rem;
+  }
+}
 .courses--card--body p {
   color: gray;
   line-height: 1.5rem;
 }
 @media only screen and (max-width: 576px) {
+  .courses--card--body p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .courses--card--body p {
     font-size: 0.9rem;
   }
@@ -1244,6 +1354,11 @@
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
 .contact-card {
   display: flex;
   justify-content: center;
@@ -1253,6 +1368,13 @@
   border-radius: 0.5rem;
 }
 @media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact-card {
     flex-direction: column;
     padding: 2rem;
@@ -1270,10 +1392,20 @@
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact-card--contents h2 {
+    font-size: 1rem;
+  }
+}
 .contact-card--contents p {
   color: gray;
 }
 @media only screen and (max-width: 576px) {
+  .contact-card--contents p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact-card--contents p {
     font-size: 0.9rem;
   }
@@ -1290,8 +1422,23 @@ footer {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  footer h2 {
+    font-size: 1.2rem;
+  }
+}
 footer h2 P {
   color: #e8e8e8;
+}
+@media only screen and (max-width: 576px) {
+  footer h2 P {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  footer h2 P {
+    font-size: 0.9rem;
+  }
 }
 footer h2 a {
   color: #fff;
