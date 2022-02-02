@@ -1,10 +1,10 @@
-# Modern Web Landing Page using SASS & JS 🧑‍💻
+# Modern Web Landing Page using SASS  🧑‍💻
 
-Learn to build Modern landing page built on HTML, CSS, SASS &amp; Javascript in Tamil. We are going to build realtime website from scratch, beginner friendly
+Learn to build Modern landing page built on HTML, CSS &amp; SASS   in Tamil.Build realtime website from scratch, beginner friendly
 
-#### Screenshots (What we gonna learn at the end!)
+#### Screenshots 
 
-![Webdesign Tamil](supporting-files/screenshot.png)
+![WebDesign Tamil](supporting-files/screenshot.png)
 
 #### Download Resources:
 
